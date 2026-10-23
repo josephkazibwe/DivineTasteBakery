@@ -1,0 +1,104 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8ef">
+  <meta name="description" content="Explore the cake, cupcake and cookie menu and photo gallery from Divine Taste Bakery in Kyengera Mugongo.">
+  <title>Menu &amp; Gallery | Divine Taste Bakery</title>
+  <style>
+    :root{--wine:#4b1d2b;--rose:#7f3847;--gold:#c99a54;--cream:#fff8ef;--ink:#342421;--muted:#715e57}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Georgia,'Times New Roman',serif;background:linear-gradient(rgba(255,249,241,.89),rgba(255,249,241,.92)),url('./BACKGROUND.jpeg') center/cover fixed no-repeat}a{color:inherit}.wrap{width:min(1280px,calc(100% - 48px));margin:auto}
+    .header{position:sticky;top:0;z-index:20;background:rgba(255,249,241,.97);border-bottom:1px solid rgba(120,82,54,.14);backdrop-filter:blur(12px)}.navrow{height:98px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{display:flex;align-items:center;gap:15px;text-decoration:none}.brand img{width:64px;height:64px;object-fit:cover;border:1px solid #d7b778;border-radius:50%}.brand strong{color:var(--wine);font-size:1.13rem;letter-spacing:.065em;white-space:nowrap}.navlinks{display:flex;align-items:center;gap:32px;font:600 .9rem Arial,sans-serif}.navlinks>a:not(.pill){color:#594944;text-decoration:none}.navlinks>a.active,.navlinks>a:hover{color:var(--rose)}.pill,.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border:0;border-radius:999px;background:var(--wine);color:white;text-decoration:none;font:700 .9rem Arial,sans-serif;box-shadow:0 9px 22px rgba(75,29,43,.16);transition:transform .2s,background .2s}.pill:hover,.button:hover{transform:translateY(-2px);background:var(--rose)}.menu-toggle{display:none;border:0;background:transparent;padding:10px;cursor:pointer}.menu-toggle span{display:block;width:25px;height:2px;margin:5px;background:#382722}
+    .hero{position:relative;overflow:hidden;padding:68px 0 76px;background:linear-gradient(110deg,rgba(255,249,241,.94),rgba(255,249,241,.72))}.hero-grid{display:grid;grid-template-columns:1fr .88fr;align-items:center;gap:clamp(35px,6vw,80px)}.eyebrow{margin:0 0 15px;color:var(--rose);font:700 .76rem Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase}.hero h1{margin:0;color:var(--wine);font-size:clamp(3rem,5.6vw,5.6rem);font-weight:500;line-height:1;letter-spacing:-.045em}.hero h1 em{color:var(--gold);font-weight:500}.hero-copy>p:not(.eyebrow){max-width:570px;margin:22px 0 27px;color:var(--muted);font:1rem/1.8 Arial,sans-serif}.hero-photo{height:410px;overflow:hidden;border-radius:210px 210px 24px 24px;box-shadow:0 18px 45px rgba(75,29,43,.18);border:1px solid rgba(201,154,84,.45)}.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 43%;filter:saturate(1.15) contrast(1.04)}.hero-actions{display:flex;align-items:center;gap:15px;flex-wrap:wrap}.hero-actions .button.secondary{background:transparent;border:1px solid var(--wine);color:var(--wine);box-shadow:none}
+    .menu-section{padding:66px 0 78px;background:rgba(255,249,241,.84);backdrop-filter:blur(5px)}.section-head{text-align:center;max-width:700px;margin:0 auto 30px}.section-head .eyebrow{color:#98713b}.section-head h2{margin:0 0 12px;color:var(--wine);font-size:clamp(2rem,4vw,3.1rem);font-weight:500;letter-spacing:-.03em}.section-head p{margin:0;color:var(--muted);font: .98rem/1.7 Arial,sans-serif}.menu-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.menu-card{position:relative;min-height:365px;overflow:hidden;display:flex;align-items:flex-end;border-radius:18px;background:#6c3b34;box-shadow:0 12px 30px rgba(75,29,43,.13);isolation:isolate}.menu-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(1.24) contrast(1.06);transition:transform .5s,filter .5s}.menu-card:after{content:'';position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(35,20,18,.03) 25%,rgba(39,19,25,.83) 100%)}.menu-card:hover img{transform:scale(1.06);filter:saturate(1.38) contrast(1.07)}.menu-info{position:relative;z-index:1;width:100%;padding:24px 22px;color:white}.menu-info .type{margin:0 0 7px;color:#f0d39c;font:700 .67rem Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase}.menu-info h3{margin:0 0 7px;font-size:1.6rem;font-weight:500}.menu-info p{margin:0 0 15px;color:#fff4e8;font: .86rem/1.55 Arial,sans-serif}.menu-info a{display:inline-flex;align-items:center;gap:6px;color:white;font:700 .78rem Arial,sans-serif;text-decoration:none;border-bottom:1px solid #dfbf83;padding-bottom:4px}.menu-info a:hover{color:#f1d39c}
+    .gallery{padding:76px 0 82px;background:rgba(250,245,236,.92);backdrop-filter:blur(5px)}.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:155px;gap:14px}.gallery-item{position:relative;overflow:hidden;border-radius:14px;background:#e7d7c4;box-shadow:0 8px 22px rgba(75,29,43,.12)}.gallery-item img{width:100%;height:100%;object-fit:cover;filter:saturate(1.18) contrast(1.04);transition:transform .45s,filter .45s}.gallery-item:hover img{transform:scale(1.07);filter:saturate(1.4) contrast(1.06)}.gallery-item:after{content:attr(data-caption);position:absolute;inset:auto 0 0;padding:30px 14px 13px;color:white;background:linear-gradient(transparent,rgba(34,20,21,.7));font:600 .82rem Arial,sans-serif;letter-spacing:.04em}.gallery-item.tall{grid-row:span 2}.gallery-item.wide{grid-column:span 2}.gallery-note{margin:26px auto 0;text-align:center;color:var(--muted);font: .88rem/1.6 Arial,sans-serif}
+    .contact{padding:0 0 76px;background:rgba(250,245,236,.92)}.contact-box{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:36px clamp(24px,5vw,58px);border-radius:20px;background:linear-gradient(115deg,var(--wine),#713746);color:white;box-shadow:0 16px 38px rgba(75,29,43,.14)}.contact-box h2{margin:0 0 8px;font-size:clamp(1.65rem,3vw,2.3rem);font-weight:500}.contact-box p{margin:0;color:#f2dfd6;font: .96rem/1.7 Arial,sans-serif}.contact-box .button{flex:none;background:#e3bd7b;color:#3e2025;box-shadow:none}footer{padding:27px 20px;background:#301820;color:#f8eee5;text-align:center;font:.86rem/1.8 Arial,sans-serif}footer strong{color:#e4bd7e;letter-spacing:.12em}footer a{color:#f8eee5;text-decoration:none}.foot-motto{color:#e4bd7e;font:italic 1rem Georgia,serif}
+    @media(max-width:1000px){.wrap{width:min(100% - 40px,760px)}.navrow{height:auto;min-height:88px}.brand img{width:56px;height:56px}.brand strong{font-size:.98rem}.menu-toggle{display:block;margin-left:auto}.navlinks{display:none;position:absolute;top:100%;left:0;right:0;padding:14px 22px 22px;background:#fff9f1;box-shadow:0 14px 24px rgba(50,29,20,.13);flex-direction:column;align-items:stretch;gap:0}.navlinks.open{display:flex}.navlinks>a:not(.pill){padding:13px 2px;border-bottom:1px solid #e8dfd4}.navlinks .pill{margin-top:14px}.menu-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-grid{grid-template-columns:1fr .85fr;gap:28px}.hero-photo{height:360px}.menu-card{min-height:335px}.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:650px){.wrap{width:calc(100% - 36px)}.navrow{min-height:80px}.brand img{width:50px;height:50px}.brand strong{font-size:.82rem;letter-spacing:.04em}.hero{padding:48px 0 52px}.hero-grid{grid-template-columns:1fr}.hero h1{font-size:clamp(2.9rem,11vw,4.2rem)}.hero-photo{width:86%;height:340px;margin:5px auto 0}.menu-section,.gallery{padding:52px 0 58px}.menu-grid{grid-template-columns:1fr;gap:16px}.menu-card{min-height:355px}.gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:135px;gap:10px}.gallery-item.tall{grid-row:span 2}.gallery-item.wide{grid-column:span 2}.contact{padding-bottom:53px}.contact-box{flex-direction:column;align-items:flex-start;padding:28px 22px}.contact-box .button{width:100%;white-space:normal;text-align:center}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.menu-card img,.gallery-item img,.pill,.button{transition:none}}
+  
+    .gallery-showcase{overflow:hidden;padding:18px 0;background:rgba(247,237,222,.92);border-bottom:1px solid rgba(201,154,84,.3)}
+    .gallery-marquee{overflow:hidden;width:100%;mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+    .gallery-track{display:flex;width:max-content;animation:gallery-right 42s linear infinite}
+    .gallery-marquee:hover .gallery-track{animation-play-state:paused}
+    .gallery-set{display:flex;gap:16px;padding-right:16px}
+    .ribbon-card{position:relative;flex:none;width:255px;height:205px;margin:0;overflow:hidden;border-radius:15px;background:#6a3934;box-shadow:0 10px 25px rgba(75,29,43,.16)}
+    .ribbon-card img{width:100%;height:100%;display:block;object-fit:cover;filter:saturate(1.26) contrast(1.06);transition:transform .45s,filter .45s}
+    .ribbon-card:hover img{transform:scale(1.07);filter:saturate(1.4) contrast(1.08)}
+    .ribbon-card figcaption{position:absolute;inset:auto 0 0;padding:26px 14px 12px;background:linear-gradient(transparent,rgba(34,20,21,.72));color:white;font:600 .82rem Arial,sans-serif;letter-spacing:.04em}
+    @keyframes gallery-right{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+    @media(max-width:650px){.gallery-showcase{padding:13px 0}.gallery-set{gap:11px;padding-right:11px}.ribbon-card{width:178px;height:150px;border-radius:12px}}
+    @media(prefers-reduced-motion:reduce){.gallery-track{animation:none}}
+  .ribbon-card img[src*="becky-baking-enhanced"],.gallery-item img[src*="becky-baking-enhanced"]{object-position:50% 27%}
+  </style>
+</head>
+<body>
+  <header class="header"><div class="wrap navrow">
+    <a class="brand" href="index.html#home" aria-label="Divine Taste Bakery home"><img src="./LOGO.jpeg" alt="Divine Taste Bakery logo"><strong>DIVINE TASTE BAKERY</strong></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span></span></button>
+    <nav class="navlinks" id="site-navigation" aria-label="Main navigation"><a href="index.html#home">Home</a><a class="active" href="menu.html">Menu &amp; Gallery</a><a href="about.html">About Us</a><a href="contact.html">Contact</a><a class="pill" href="https://wa.me/2567878885854?text=Hello%20Divine%20Taste%20Bakery%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">Order on WhatsApp ↗</a></nav>
+  </div></header>
+  <main>
+    <section class="gallery-showcase" aria-label="Bakery photo gallery">
+      <div class="gallery-marquee"><div class="gallery-track">
+        <div class="gallery-set">
+          <figure class="ribbon-card"><img src="./BACKGROUND.jpeg" alt="Red velvet celebration cake"><figcaption>Celebration cakes</figcaption></figure>
+          <figure class="ribbon-card"><img src="./16.jpeg" alt="Red and cream cake"><figcaption>Made for your moments</figcaption></figure>
+          <figure class="ribbon-card"><img src="./13.jpeg" alt="Decorated round cake"><figcaption>Birthday cakes</figcaption></figure>
+          <figure class="ribbon-card"><img src="./6.jpeg" alt="Cupcakes arranged on a tray"><figcaption>Cupcakes</figcaption></figure>
+          <figure class="ribbon-card"><img src="./4.jpeg" alt="Assorted cookies"><figcaption>Cookies to share</figcaption></figure>
+          <figure class="ribbon-card"><img src="./becky-baking-enhanced.jpeg" alt="Becky holding a cake at the bakery"><figcaption>Our baker, Becky</figcaption></figure>
+        </div>
+        <div class="gallery-set" aria-hidden="true">
+          <figure class="ribbon-card"><img src="./BACKGROUND.jpeg" alt=""><figcaption>Celebration cakes</figcaption></figure>
+          <figure class="ribbon-card"><img src="./16.jpeg" alt=""><figcaption>Made for your moments</figcaption></figure>
+          <figure class="ribbon-card"><img src="./13.jpeg" alt=""><figcaption>Birthday cakes</figcaption></figure>
+          <figure class="ribbon-card"><img src="./6.jpeg" alt=""><figcaption>Cupcakes</figcaption></figure>
+          <figure class="ribbon-card"><img src="./4.jpeg" alt=""><figcaption>Cookies to share</figcaption></figure>
+          <figure class="ribbon-card"><img src="./becky-baking-enhanced.jpeg" alt=""><figcaption>Our baker, Becky</figcaption></figure>
+        </div>
+      </div></div>
+    </section>
+    <section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><p class="eyebrow">Divine Sweetness in Every Bite</p><h1>Sweet moments,<br><em>beautifully baked.</em></h1><p>Explore cakes, cupcakes and cookies from Divine Taste Bakery. Share your celebration, ask about designs and pricing, and we’ll help you plan a sweet order.</p><div class="hero-actions"><a class="button" href="https://wa.me/2567878885854?text=Hello%20Divine%20Taste%20Bakery%2C%20I%27d%20like%20to%20ask%20about%20your%20menu." target="_blank" rel="noopener">Ask about the menu ↗</a><a class="button secondary" href="index.html#home">Back to Home</a></div></div><div class="hero-photo"><img src="./BACKGROUND.jpeg" alt="A celebration cake from Divine Taste Bakery"></div></div></section>
+    <section class="menu-section" id="menu"><div class="wrap"><div class="section-head"><p class="eyebrow">Made for your occasion</p><h2>Choose your favourite</h2><p>Our cakes and treats are made to order. Message us for options and a quote.</p></div><div class="menu-grid">
+      <article class="menu-card"><img src="./BACKGROUND.jpeg" alt="Red velvet birthday cake"><div class="menu-info"><p class="type">For birthdays &amp; milestones</p><h3>Birthday Cakes</h3><p>A celebratory cake for birthdays, family gatherings and joyful milestones.</p><a href="https://wa.me/2567878885854?text=Hello%20Divine%20Taste%20Bakery%2C%20I%27m%20interested%20in%20a%20birthday%20cake." target="_blank" rel="noopener">Ask for details ↗</a></div></article>
+      <article class="menu-card"><img src="./13.jpeg" alt="Decorated celebration cake"><div class="menu-info"><p class="type">For your big day</p><h3>Wedding Cakes</h3><p>Celebrate your wedding with a cake for your special day. Ask us about designs and pricing.</p><a href="https://wa.me/2567878885854?text=Hello%20Divine%20Taste%20Bakery%2C%20I%27d%20like%20to%20enquire%20about%20a%20wedding%20cake." target="_blank" rel="noopener">Ask for details ↗</a></div></article>
+      <article class="menu-card"><img src="./6.jpeg" alt="Cupcakes arranged on a tray"><div class="menu-info"><p class="type">Little treats to share</p><h3>Cupcakes</h3><p>Individual sweet treats for parties, celebrations and sharing with family and friends.</p><a href="https://wa.me/2567878885854?text=Hello%20Divine%20Taste%20Bakery%2C%20I%27d%20like%20to%20enquire%20about%20cupcakes." target="_blank" rel="noopener">Ask for details ↗</a></div></article>
+      <article class="menu-card"><img src="./4.jpeg" alt="Assorted cookies on a plate"><div class="menu-info"><p class="type">A sweet little bite</p><h3>Cookies</h3><p>A selection of cookies to enjoy at home, share with guests or add to your celebration table.</p><a href="https://wa.me/2567878885854?text=Hello%20Divine%20Taste%20Bakery%2C%20I%27d%20like%20to%20enquire%20about%20cookies." target="_blank" rel="noopener">Ask for details ↗</a></div></article>
+    </div></div></section>
+    <section class="gallery" id="gallery"><div class="wrap"><div class="section-head"><p class="eyebrow">A little look at our work</p><h2>Our baker, Becky</h2><p>Browse a few cakes and treats from Divine Taste Bakery.</p></div><div class="gallery-grid">
+      <figure class="gallery-item tall" data-caption="Celebration cake"><img src="./BACKGROUND.jpeg" alt="Red velvet celebration cake"></figure>
+      <figure class="gallery-item" data-caption="Birthday cake"><img src="./13.jpeg" alt="Decorated birthday cake"></figure>
+      <figure class="gallery-item wide" data-caption="Cake for a special day"><img src="./16.jpeg" alt="Red and cream celebration cake"></figure>
+      <figure class="gallery-item" data-caption="Cupcakes"><img src="./6.jpeg" alt="Cupcakes on a tray"></figure>
+      <figure class="gallery-item tall" data-caption="Cookies"><img src="./4.jpeg" alt="Assorted cookies"></figure>
+      <figure class="gallery-item" data-caption="Our baker, Becky"><img src="./becky-baking-enhanced.jpeg" alt="Becky holding a cake at the bakery"></figure>
+      <figure class="gallery-item wide" data-caption="A slice to share"><img src="./2.jpeg" alt="A slice of decorated cake"></figure>
+      <figure class="gallery-item" data-caption="Cookies to share"><img src="./7.jpeg" alt="Assorted cookies"></figure>
+      <figure class="gallery-item" data-caption="Pink celebration cake"><img src="./12.jpeg" alt="Pink celebration cake"></figure>
+      <figure class="gallery-item" data-caption="Freshly baked treats"><img src="./8.jpeg" alt="Cookies and small baked treats"></figure>
+    </div></div></section>
+    <section class="contact"><div class="wrap contact-box"><div><h2>Ready to order something sweet?</h2><p>We’re in Kyengera Mugongo. Message us to ask about your order.</p></div><a class="button" href="https://wa.me/2567878885854?text=Hello%20Divine%20Taste%20Bakery%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">Order on WhatsApp ↗</a></div></section>
+  </main>
+  <footer><strong>DIVINE TASTE BAKERY</strong><br>Kyengera Mugongo · <a href="https://wa.me/2567878885854" target="_blank" rel="noopener">0787 888 5854 on WhatsApp</a><br><span class="foot-motto">Divine Sweetness in Every Bite</span></footer>
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const siteNavigation = document.querySelector('#site-navigation');
+    menuButton.addEventListener('click', () => {
+      const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', String(!isOpen));
+      menuButton.setAttribute('aria-label', isOpen ? 'Open navigation menu' : 'Close navigation menu');
+      siteNavigation.classList.toggle('open', !isOpen);
+    });
+    siteNavigation.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.setAttribute('aria-label', 'Open navigation menu');
+      siteNavigation.classList.remove('open');
+    }));
+  </script>
+</body>
+</html>
+
+
+
